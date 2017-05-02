@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Practice</title>
+
+	<style type="text/css" media="screen">
+		.the-box{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			color:  #fff;
+			padding:  10px;
+			border:  5px solid black;
+			margin:  10px;
+			display:  inline-block;
+			vertical-align: top;
+		}
+
+		div{
+			border: 2px solid black;
+		}
+
+		#the-block,#the-block-2{
+			width:  50%;
+		}
+		/* #the-block2{
+			width:  50%;
+		}  */
+		#container{
+			width:  50%;
+		}
+
+		.meme-holder{
+			width: 300px;
+			border:  5px red solid;
+
+		}
+
+		img{
+			max-width:  100%;
+		}
+
+		#nav-bar{
+			height:  60px;
+			background-color: black;
+			color:  white;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		body{
+			position: relative;
+			
+		}
+
+		.footer{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: green;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- 1. A block level element, by default, takes up all space to the right nd the left possible
+	2. It can have a height and a width
+	3. Nothing can be on either side (because its 100%), and it ignores margin
+	4. If you change the size, it will still take up 100%, but the rest outside of the width, will be margin -->
+	<div id="nav-bar">
+		This is the main nav bar
+	</div>
+
+	<div id="container">
+		<div id="the-block">
+			Some text in a block.
+		</div>
+		<div id="the-block-2">
+			Some more text in a block.
+		</div>
+	</div>
+
+	<!-- Inline elements:
+	1. Respet left and right padding and margin, but NOT top or bottom
+	2. No problem what's on the left or right
+	3. With a few exceptions (namley image) you CANNOT tell them how big to be (height or width)
+	4. Will gladly ignore all block level rules unless forced otherwise
+	A cool image about how i feel... -->
+	<div class="meme-holder">
+		<img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg">
+	</div>
+	<div class="meme-holder">
+		<img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg">
+	</div>
+
+	<div class="the-box">
+		Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+	</div>
+
+	<div class="the-box">
+		I'm a box!!
+	</div>
+	<div class="the-box">
+		I'm a box!!
+	</div>
+
+	<div class="footer">
+		Lorem ipsum dolor sit amet. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+	</div>
+</body>
+</html>
